@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Upload Resume</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+      </head>
+      
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Screening</h1>
+        <input type="file" id="resumeFile" accept=".pdf,.docx,.txt">
+        <button onclick="uploadResume()">Upload Resume</button>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #001f3d; /* Navy blue background */
+  height: 100vh;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 50px; /* Increased padding for more space */
+  border-radius: 20px; /* Slightly larger border radius */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Increased max-width for a larger container */
+  animation: slideIn 1s ease-out; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animating the h1 text */
+@keyframes animateTitle {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1 {
+  font-size: 40px; /* Larger font size for the title */
+  margin-bottom: 30px;
+  color: #00b894; /* Highlight color */
+  animation: animateTitle 1.5s ease-out; /* Animation for the title */
+}
+
+/* Animating the prediction text */
+@keyframes animatePrediction {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.prediction {
+  font-size: 24px; /* Larger font size for better visibility */
+  margin: 15px 0;
+  color: #ecf0f1; /* Light color for the text */
+  animation: animatePrediction 1.5s ease-out; /* Animation for the prediction text */
+}
+
+.upload-link {
+  font-size: 18px;
+  color: white; /* White color for the link */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.upload-link:hover {
+  color: #00b894; /* Green hover color */
+}
